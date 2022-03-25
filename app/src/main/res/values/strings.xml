@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Soundboard</string>
+    <string name="quando_c_gi_un_suono_in_riproduzione">Se c\'è già un suono in riproduzione…</string>
+    <string name="hope">Hope</string>
+    <string name="meh">Meh</string>
+    <string name="eau">Eau</string>
+    <string name="e_che_devi_fare">E che devi fare?</string>
+    <string name="eci">Eci</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quando_c_gi_un_suono_in_riproduzione" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+
+                android:text="@string/hope"
+                android:textAllCaps="false"
+                android:textSize="48sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+
+                android:layout_weight="1"
+                android:text="@string/meh"
+                android:textAllCaps="false"
+                android:textSize="48sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="@string/eau"
+                android:textAllCaps="false"
+                android:textSize="48sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+
+                android:text="@string/e_che_devi_fare"
+                android:textAllCaps="false"
+                android:textSize="29sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+
+            android:text="@string/eci"
+            android:textAllCaps="false"
+            android:textSize="72sp"
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+
+</LinearLayout>
