@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,29 +17,32 @@
         android:id="@+id/planets_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:baselineAligned="false">
+        android:baselineAligned="false"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_weight="1"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
 
                 android:text="@string/hope"
                 android:textAllCaps="false"
-                android:textSize="48sp"
+                android:textSize="28sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -50,52 +54,164 @@
                 android:layout_weight="1"
                 android:text="@string/meh"
                 android:textAllCaps="false"
-                android:textSize="48sp"
+                android:textSize="28sp"
                 tools:ignore="ButtonStyle" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_weight="1"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:text="@string/eau"
                 android:textAllCaps="false"
-                android:textSize="48sp"
+                android:textSize="28sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_weight="1"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
 
                 android:text="@string/e_che_devi_fare"
                 android:textAllCaps="false"
-                android:textSize="29sp"
+                android:textSize="28sp"
                 tools:ignore="ButtonStyle" />
         </LinearLayout>
 
-
-        <Button
-            android:id="@+id/button5"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
-            android:text="@string/eci"
-            android:textAllCaps="false"
-            android:textSize="72sp"
-            tools:ignore="InefficientWeight" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/eci"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b6"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b7"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b8"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b9"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b10"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b11"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="@string/b12"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                tools:ignore="ButtonStyle,InefficientWeight" />
+        </LinearLayout>
+
     </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>

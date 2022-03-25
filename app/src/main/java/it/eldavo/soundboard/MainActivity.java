@@ -1,7 +1,5 @@
 package it.eldavo.soundboard;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +8,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private int pos;
     MediaPlayer mediaPlayer;
+    ArrayList<MediaPlayer> spamPlayers = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         button.setOnClickListener(this::click);
         button = findViewById(R.id.button5);
         button.setOnClickListener(this::click);
-
+        button = findViewById(R.id.button6);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button7);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button8);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button9);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button10);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button11);
+        button.setOnClickListener(this::click);
+        button = findViewById(R.id.button12);
+        button.setOnClickListener(this::click);
 
     }
 
@@ -70,6 +86,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 2:
                 MediaPlayer mp = go(v);
                 mp.start();
+                spamPlayers.add(mp);
+                ArrayList<MediaPlayer> toRemove = new ArrayList<>();
+                // For each player in spamPlayers
+                for (MediaPlayer m : spamPlayers) {
+                    // If the player is not playing
+                    if (!m.isPlaying()) {
+                        // Reset the player
+                        m.reset();
+                        // Release the player
+                        m.release();
+                        // Remove the player from the list
+                        toRemove.add(m);
+                    }
+                }
+                spamPlayers.removeAll(toRemove);
         }
 
     }
@@ -89,6 +120,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         if (v.getId() == R.id.button5) {
             return MediaPlayer.create(this, R.raw.button5);
+        }
+        if (v.getId() == R.id.button6) {
+            return MediaPlayer.create(this, R.raw.button6);
+        }
+        if (v.getId() == R.id.button7) {
+            return MediaPlayer.create(this, R.raw.button7);
+        }
+        if (v.getId() == R.id.button8) {
+            return MediaPlayer.create(this, R.raw.button8);
+        }
+        if (v.getId() == R.id.button9) {
+            return MediaPlayer.create(this, R.raw.button9);
+        }
+        if (v.getId() == R.id.button10) {
+            return MediaPlayer.create(this, R.raw.button10);
+        }
+        if (v.getId() == R.id.button11) {
+            return MediaPlayer.create(this, R.raw.button11);
+        }
+        if (v.getId() == R.id.button12) {
+            return MediaPlayer.create(this, R.raw.button12);
         }
         return null;
     }
